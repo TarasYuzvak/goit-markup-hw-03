@@ -1,0 +1,245 @@
+
+:root {
+
+    --hover-color-link: #2196F3;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --grey-color: #757575;
+    --blackgrey-color: #212121;
+}
+
+body {
+    
+    font-family: Roboto, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Логотип */
+
+
+
+.logo {
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--hover-color-link);
+
+}
+
+.logo-studio-header {
+
+    color: var(--black-color);
+}
+
+.logo-studio-footer {
+    color: var(--white-color);
+}
+
+/* Навігація */
+
+.nav-list {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--blackgrey-color);
+    text-decoration: none;
+}
+
+.nav-list:hover {
+
+    color: var(--hover-color-link);
+}
+
+.nav-list:focus {
+
+    color: var(--hover-color-link);
+}
+
+.nav-list.current {
+    color: var(--hover-color-link);
+}
+
+
+/* Контакти */
+
+.contacts-header {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey-color);
+    text-decoration: none;
+}
+
+.contacts-header:hover, .contacts-header:focus {
+
+     color: var(--hover-color-link);
+}
+
+/* Заголовок */
+
+.main-title {
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.main-title-background {
+
+    background: #2F303A;
+    
+}
+
+/* Кнопка заголовка */
+
+.button-title {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: #2196F3;
+}
+
+/* Наши преимущества */
+
+.title-advantages {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--blackgrey-color);
+
+}
+
+.advantages-content {
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+}
+
+/* Чем мы занимаемся */
+
+.subtitle {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--blackgrey-color);
+
+}
+
+/* Наша  команда */
+
+.team-names {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: var(--blackgrey-color);
+}
+
+.name-subtitle {
+
+    font-size: 16px;
+    line-height: 1.18;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+}
+
+/* Footer */
+
+.contacts-footer {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.footer-address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.contacts-footer:hover, .contacts-footer:focus {
+    color: var(--hover-color-link);
+}
+
+.footer-address:hover, .footer-address:focus {
+    color: var(--hover-color-link);
+}
+
+footer {
+    background-color: #2F303A;
+}
+
+/* Портфолио */
+
+.button-portfolio {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--blackgrey-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-portfolio:hover, .button-portfolio:focus {
+    background-color: var(--hover-color-link);
+    color: var(--white-color);
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--blackgrey-color);
+
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--grey-color);
+
+}
