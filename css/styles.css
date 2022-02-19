@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 :root {
 
@@ -15,6 +22,14 @@ body {
 
 li {
     list-style: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 1170px;
+    outline: 2px solid red;
 }
 
 /* Логотип */
@@ -89,26 +104,30 @@ li {
 /* Заголовок */
 
 .main-title {
-
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 200px 452px 280px 452px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
 }
 
 .main-title-background {
-
+    height: 600px;
+    width: 1600px;
     background: #2F303A;
-    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /* Кнопка заголовка */
 
 .button-title {
-
+    display: inline-block;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -118,11 +137,12 @@ li {
     letter-spacing: 0.06em;
     color: var(--white-color);
     background-color: #2196F3;
+
 }
 
 /* Наши преимущества */
 
-.title-advantages {
+.advantages-title {
 
     font-weight: 700;
     font-size: 14px;
@@ -133,7 +153,7 @@ li {
 
 }
 
-.advantages-content {
+.advantages-text {
 
     font-size: 14px;
     line-height: 1.71;
@@ -156,7 +176,7 @@ li {
 
 /* Наша  команда */
 
-.team-names {
+.team-title {
 
     font-weight: 500;
     font-size: 16px;
@@ -166,7 +186,7 @@ li {
     color: var(--blackgrey-color);
 }
 
-.name-subtitle {
+.team-text {
 
     font-size: 16px;
     line-height: 1.18;
@@ -227,7 +247,7 @@ footer {
     color: var(--white-color);
 }
 
-.team-title {
+.projects-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -236,7 +256,7 @@ footer {
 
 }
 
-.team-text {
+.projects-text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
