@@ -25,10 +25,10 @@ li {
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 1170px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     outline: 2px solid red;
 }
 
@@ -106,7 +106,7 @@ li {
 .main-title {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 200px 452px 280px 452px;
+    text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -116,18 +116,17 @@ li {
 }
 
 .main-title-background {
-    height: 600px;
-    width: 1600px;
     background: #2F303A;
+    padding: 200px 0px;
+    text-align: center;
+    width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
 }
 
 /* Кнопка заголовка */
 
 .button-title {
-    display: inline-block;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -137,7 +136,13 @@ li {
     letter-spacing: 0.06em;
     color: var(--white-color);
     background-color: #2196F3;
-
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 10px 32px;
 }
 
 /* Наши преимущества */
@@ -262,4 +267,8 @@ footer {
     letter-spacing: 0.03em;
     color: var(--grey-color);
 
+}
+
+.section-advanteges-title {
+    margin: 0;
 }
