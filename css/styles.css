@@ -1,3 +1,4 @@
+
 html {
     box-sizing: border-box;
 }
@@ -29,15 +30,21 @@ li {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
+}
+
+/* Header */
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px; 
+
+    border-bottom: 1px solid #ececec;
 }
 
 /* Логотип */
 
-
-
 .logo {
-
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -45,7 +52,7 @@ li {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--hover-color-link);
-
+    margin-right: 93px;
 }
 
 .logo-studio-header {
@@ -59,6 +66,11 @@ li {
 
 /* Навігація */
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 .nav-list {
 
     font-weight: 500;
@@ -69,36 +81,49 @@ li {
     text-decoration: none;
 }
 
-.nav-list:hover {
+.nav-list:hover, .nav-list:focus {
 
     color: var(--hover-color-link);
 }
 
-.nav-list:focus {
-
-    color: var(--hover-color-link);
-}
 
 .nav-list.current {
     color: var(--hover-color-link);
 }
 
+.nav {
+    display: flex;
+    padding: 0;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
 
 /* Контакти */
 
-.contacts-header {
-
+.contacts-header .link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--grey-color);
     text-decoration: none;
+    
 }
 
-.contacts-header:hover, .contacts-header:focus {
-
+.contacts-header .link:hover, .contacts-header .link:focus {
      color: var(--hover-color-link);
+}
+
+.contacts-header {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+
+.contacts-header .item:not(:last-child) {
+    margin-right: 50px;
 }
 
 /* Заголовок */
@@ -141,14 +166,26 @@ li {
     border: 1px solid transparent;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 10px 32px;
 }
 
 /* Наши преимущества */
 
-.advantages-title {
+.section-advanteges {
+    margin-top: 94px;
+}
 
+.advanteges {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+
+.advantages-title {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -159,17 +196,31 @@ li {
 }
 
 .advantages-text {
-
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey-color);
+    width: 270px;
 }
 
 /* Чем мы занимаемся */
 
-.subtitle {
+.section-work {
+    margin-top: 94px;
+}
 
+.work {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -180,6 +231,24 @@ li {
 }
 
 /* Наша  команда */
+
+.section-team {
+    margin-top: 94px;
+}
+
+.team {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.team-item {
+    text-align: center;
+      border-right: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  border-left: 2px solid #eeeeee;
+}
 
 .team-title {
 
@@ -230,11 +299,40 @@ li {
 
 footer {
     background-color: #2F303A;
+    height: 252px;
+    margin-top: 94px;
+}
+
+.logo-footer {
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: 0%;
+}
+
+.address {
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.address .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 /* Портфолио */
 
 .button-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 0;
+}
+
+.button-portfolio .item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.button-portfolio .button {
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -245,11 +343,21 @@ footer {
     background: #F5F4FA;
     border-radius: 4px;
     cursor: pointer;
+    border-color: transparent;
+    padding: 6px 22px;
 }
 
-.button-portfolio:hover, .button-portfolio:focus {
+.button-portfolio .button:hover, .button-portfolio .button:focus {
     background-color: var(--hover-color-link);
     color: var(--white-color);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 34px;
 }
 
 .projects-title {
@@ -269,6 +377,30 @@ footer {
 
 }
 
-.section-advanteges-title {
-    margin: 0;
+.projects-item {
+    margin-bottom: 30px;
+}
+
+.projects-item:nth-last-child(-n +3) {
+    margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
